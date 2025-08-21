@@ -1,10 +1,33 @@
 ---
 import Base from "@/layouts/Base.astro";
-import Left from "@/components/homepage/Left.astro";
 ---
 
 <Base title="Home">
     <div class="flex h-full w-full justify-center items-center flex-col">
-        <Left />
+        <div
+            class="border-2 sm:flex-row flex-col w-[90%] max-w-110 border-gray-200 p-4 rounded-xl gap-4 flex"
+        >
+            <div class="h-30 w-30 min-h-30 min-w-30 rounded-xl overflow-hidden">
+                <img
+                    src="https://github.com/rezcolen3.png"
+                    class="hover:scale-110 transition w-30 h-30"
+                    alt=""
+                />
+            </div>
+            <div class="gap-2 flex flex-col">
+                <h1 class="text-5xl font-[Space_Grotesk] font-bold">
+                    Yo, i'm Rez!
+                </h1>
+                <!--
+                <h3 class="text-xl font-['Jersey_10'] text-gray-600">@RezHackXYZ</h3>
+                -->
+                <p class="wrap-anywhere">
+                    I am a Teenaged Software Engineer and <a
+                        class="underline"
+                        href="https://hackclub.com">Hackcluber</a
+                    >!
+                </p>
+            </div>
+        </div>
     </div>
 </Base>

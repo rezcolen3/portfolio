@@ -1,8 +1,10 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
+import Base from "@/layouts/Base.astro";
+import Left from "@/components/homepage/Left.astro";
 ---
 
-<BaseLayout title="Home">
-    <h1>Welcome to my site ✨</h1>
-    <p>this is the homepage!</p>
-</BaseLayout>
+<Base title="Home">
+    <div class="flex h-full w-full justify-center items-center flex-col">
+        <Left />
+    </div>
+</Base>

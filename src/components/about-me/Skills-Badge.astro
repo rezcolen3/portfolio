@@ -1,0 +1,7 @@
+---
+const { skill } = Astro.props;
+---
+
+<img alt={skill} class="block dark:hidden" src={`https://img.shields.io/badge/${skill}-d7d8db.svg?style=for-the-badge&logo=${skill}&logoColor=20232a`} />
+
+<img alt={skill} class="hidden dark:block" src={`https://img.shields.io/badge/${skill}-20232a.svg?style=for-the-badge&logo=${skill}&logoColor=d7d8db`} />

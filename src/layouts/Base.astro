@@ -1,5 +1,5 @@
 ---
-const { title = "My Site" } = Astro.props;
+const { title } = Astro.props;
 import "@/styles/global.css";
 ---
 
@@ -7,8 +7,8 @@ import "@/styles/global.css";
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <title>Rez's {title}</title>
+        <link rel="icon" type="image/svg+xml" href="https://github.com/rezcolen3.png" />
+        <title>{title}</title>
     </head>
     <body class="h-screen">
         <slot />

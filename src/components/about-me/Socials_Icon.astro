@@ -1,0 +1,27 @@
+---
+const { icon, link } = Astro.props;
+---
+
+<a
+    class="hidden dark:block"
+    href={link}
+    target="_blank"
+>
+    <img
+        class="inline h-10 w-10"
+        src={`https://cdn.simpleicons.org/${icon}/white`}
+        alt={icon}
+    />
+</a>
+
+<a
+    class="block dark:hidden"
+    href={link}
+    target="_blank"
+>
+    <img
+        class="inline h-10 w-10"
+        src={`https://cdn.simpleicons.org/${icon}/black`}
+        alt={icon}
+    />
+</a>

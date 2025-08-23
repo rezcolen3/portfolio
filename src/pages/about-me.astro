@@ -3,13 +3,16 @@ import Main from "@/layouts/Main.astro";
 
 import About_Me from "@/components/about-me/About_Me.astro";
 import Skills from "@/components/about-me/Skills.astro";
+import GitHubStats from "@/components/about-me/GitHub_Stats.astro";
 
 ---
 
 <Main title="Home">
-    <div class="flex w-full overflow-auto justify-center items-center flex-col">
+    <div class="flex w-full overflow-y-auto items-center flex-col">
         <About_Me />
 
         <Skills />
+
+        <GitHubStats />
     </div>
 </Main>

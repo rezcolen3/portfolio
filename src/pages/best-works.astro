@@ -1,0 +1,22 @@
+---
+import Main from "@/layouts/Main.astro";
+import Card from "@/components/best-works/card.astro";
+---
+
+<Main title="Rez's Best Works">
+    <div class="flex w-full overflow-y-auto items-center flex-col">
+        <h1 class="font-bold text-3xl font-[Space_Grotesk]">Best Works</h1>
+
+        <div
+            class="flex flex-wrap gap-5 w-[90%] max-w-220 justify-center items-center p-4 font-[Space_Grotesk] rounded-xl"
+        >
+            <Card
+                img="https://hc-cdn.hel1.your-objectstorage.com/s/v3/e9622146fe4b517140d96b02524c7b765a550ca5_image.png"
+                link="https://rezhack.xyz"
+                stack={["astro", "tailwindcss"]}
+                name="My Portfolio"
+                description="This awesome website!"
+            />
+        </div>
+    </div>
+</Main>

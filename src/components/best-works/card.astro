@@ -1,0 +1,24 @@
+---
+const { img, link, stack, name, description } = Astro.props;
+
+import StackIcon from "./stack-icon.astro";
+---
+
+<a href={link} class="border p-2 flex flex-col rounded w-65 hover:scale-110 transition">
+    <h3 class="text-xl font-semibold">{name}</h3>
+    <p>{description}</p>
+
+    <div class="flex mt-1 gap-1">
+        {stack.map((tool) => <StackIcon icon={tool} />)}
+    </div>
+
+    <div
+        class="rounded border-1 border-gray-300 w-60 mt-1 aspect-video overflow-hidden"
+    >
+        <img
+            src={img}
+            alt={name}
+            class="hover:scale-110 transition w-60 aspect-video"
+        />
+    </div>
+</a>
